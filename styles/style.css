@@ -108,25 +108,25 @@
 
 .category__bg1 {
 background: 
-    url(../img/category1.png) ,
+    url(../img/category1.jpg) ,
     linear-gradient(rgba(33, 32, 32, 0.7), rgba(33, 32, 32, 0.7)); 
     background-blend-mode: soft-light;
 }
 
 .category__bg2 {
-    background-image: url("../img/category2.png"),
+    background-image: url("../img/category2.jpg"),
     linear-gradient(rgba(33, 32, 32, 0.7), rgba(33, 32, 32, 0.7)); 
     background-blend-mode: soft-light;
 }
 
 .category__bg3 {
-    background: url("../img/category3.png"),
+    background: url("../img/category3.jpg"),
     linear-gradient(rgba(33, 32, 32, 0.7), rgba(33, 32, 32, 0.7)); 
     background-blend-mode: soft-light;
 }
 
 .category__bg4 {
-    background: url("../img/category4.png"),
+    background: url("../img/category4.jpg"),
     linear-gradient(rgba(33, 32, 32, 0.7), rgba(33, 32, 32, 0.7)); 
     background-blend-mode: soft-light;
 }
@@ -156,14 +156,50 @@ background:
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*margin: 48px 0 18px;*/
 }
+
 .cards__item {
     background-color: #F8F8F8;
     width: 360px;
     height: 580px;
     margin-bottom: 30px;
+    position: relative;
 }
+
+.cards__item__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.cards__item:hover .cards__item__overlay {
+    opacity: 1;
+}
+
+.cards__item__overlay button {
+    padding: 11px;
+    background:rgba(255, 255, 255, 0);
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.cards__item__overlay button > span {
+    padding-left: 11px;
+    align-self: center;
+}
+
+
+
 
 .cards__item__info {
     margin: 25px 20px 20px 20px;
@@ -360,6 +396,7 @@ background:
 
 .footer__right__groups {
     background-color: white;
+    color: black;
     text-decoration: none;
     padding: 8px;
     display: block;
@@ -369,14 +406,11 @@ background:
 
 .footer__right__groups:hover {
     background-color: #F26376;
+    color: white;
 }
 
 .footer__right__groups:not(:last-child) {
     margin-right: 8px;
-}
-
-.footer__right__groups:hover img{
-    filter: invert(100%);
 }
 
 .breadcrumb-panel {
@@ -548,7 +582,7 @@ padding-left: 10px;
 	position: absolute;
 	left: 0;
 	top: 1px;
-    background: url('../img/checkboxmarker.png') 0 0 no-repeat;
+    background: url('../img/checkboxmarker.svg') 0 0 no-repeat;
 }
  
 
@@ -569,4 +603,115 @@ padding-left: 10px;
 	opacity: 0.6;
 }
 
+.slider {
+    height: 777px;
+    background-color:  #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+}
 
+
+.slider > button {
+    height: 47px;
+    width: 47px;
+    padding: 12px 17px;
+    border: none;
+    background-color: rgba(42, 42, 42, 0.15);
+    align-self: center;
+}
+
+.slider > div {
+    /* padding-top: 11px ;*/
+    /* border: greenyellow 1px solid; */
+    width: 100%;
+    background: url('../img/slider_card.jpg') top 10px center no-repeat;
+}
+
+
+/* css-фильтр-генератор 
+   https://codepen.io/sosuke/pen/Pjoqqp */
+.slider button:hover img {
+    filter: invert(55%) sepia(60%) 
+        saturate(1836%) hue-rotate(313deg) 
+        brightness(103%) contrast(89%);
+}
+
+.info {
+    border: 1px solid #EAEAEA;
+    background-color: white;
+    margin-top: -60px; 
+    padding: 65px 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info h2 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.info__line1 {
+    color: #EF5B70;
+    width: 65px;
+    height: 3px;
+    margin: 12px 0;
+}
+
+.info__title {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+}
+
+.info__description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    padding: 48px 42px 32px 42px;
+}
+
+.info__price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;    
+    color: #EF5B70;    
+}
+
+.info__line2 {
+    margin: 65px 0;
+    width: 100%;
+}
+
+.info__add {
+    background-color: white;
+    border-color:  #EF5B70;
+    border-style: solid;
+    padding: 14px 24px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    display: flex;
+}
+
+.info__add img {
+    filter: invert(55%) sepia(60%) 
+    saturate(1836%) hue-rotate(313deg) 
+    brightness(103%) contrast(89%);
+}
+
+.info__add span {
+    padding-left: 24px;
+    align-self: center;
+}
+
+.cards_margin {
+    margin-top: 130px;
+    margin-bottom: 100px;
+    padding: 0;
+}
