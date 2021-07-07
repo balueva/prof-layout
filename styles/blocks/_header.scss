@@ -1,0 +1,23 @@
+.header {
+    background-color: #222222;
+
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 0;
+    }
+
+    &__logo {
+        text-decoration: none;
+        margin-right: 41px;
+    }
+    
+    &__item {
+        text-decoration: none;
+
+        &:not(:last-child) {
+            margin-right: 33px;
+        }
+    }    
+}
