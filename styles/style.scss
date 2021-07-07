@@ -1,0 +1,28 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width:1160px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+@import 'blocks/header';
+@import 'blocks/intro';
+@import 'blocks/category';
+@import 'blocks/cards';
+@import 'blocks/offers';
+@import 'blocks/subscribe';
+@import 'blocks/footer';
+@import 'blocks/breadcrumb-panel';
+@import 'blocks/filter-panel';
+@import 'blocks/pages';
+@import 'blocks/slider';
+@import 'blocks/info';
+@import 'blocks/cart';

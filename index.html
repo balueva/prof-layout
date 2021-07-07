@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <title>Интернет-магазин</title>
+
+    <script src="https://kit.fontawesome.com/b0f6f9cbd1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,12 +16,12 @@
         <div class="container header__wrap">
             <div class="header__left">
                 <a class="header__logo" href="/"> <img src="img/logo.png" alt=""> </a>
-                <img src="img/search.png" alt="">
+                <img src="img/search.svg" alt="">
             </div>
             <div class="header__right">
-                <a class="header__item" href="catalog.html"> <img src="img/catalog.png" alt=""> </a>
-                <a class="header__item" href="registration.html"> <img src="img/reg.png" alt=""> </a>
-                <a class="header__item" href="cart.html"> <img src="img/cart.png" alt=""> </a>
+                <a class="header__item" href="catalog.html"> <img src="img/catalog.svg" alt=""> </a>
+                <a class="header__item" href="registration.html"> <img src="img/reg.svg" alt=""> </a>
+                <a class="header__item" href="cart.html"> <img src="img/cart.svg" alt=""> </a>
             </div>
         </div>
     </header>
@@ -28,9 +30,9 @@
         <section class="intro">
             <div class="container intro__wrap">
                 <div class="intro__text">
-                    <h1 class="intro__text__h1">
-                        <span class="intro__text__main"> THE BRAND </span>OF LUXERIOUS
-                        <span class="intro__text__color"> FASHION </span>
+                    <h1>
+                        <span class="intro__text--main"> THE BRAND </span>OF LUXERIOUS
+                        <span class="intro__text--color"> FASHION </span>
                     </h1>
                 </div>
             </div>
@@ -38,22 +40,22 @@
 
         <section class="category">
             <div class="container category__wrap">
-                <div class="category__item category__bg1">
+                <div class="category__item category__item--bg1">
                     <div class="category__text"><span>30% OFF</span>
                         <h3>FOR WOMEN</h3>
                     </div>
                 </div>
-                <div class="category__item category__bg2">
+                <div class="category__item category__item--bg2">
                     <div class="category__text"><span>HOT DEAL</span>
                         <h3>FOR MEN</h3>
                     </div>
                 </div>
-                <div class="category__item category__bg3">
+                <div class="category__item category__item--bg3">
                     <div class="category__text"><span>NEW ARRIVALS</span>
                         <h3>FOR KIDS</h3>
                     </div>
                 </div>
-                <div class="category__item category__bg4">
+                <div class="category__item category__item--bg4">
                     <div class="category__text"><span>FOR KIDS</span>
                         <h3>ACCESORIES</h3>
                     </div>
@@ -68,7 +70,12 @@
                 <div class="cards__wrap">
                     <div class="cards__item">
                         <div>
-                            <img src="img/card1.png" alt="card 1">
+                            <img src="img/card1.jpg" alt="card 1">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -81,7 +88,12 @@
                     </div>
                     <div class="cards__item">
                         <div>
-                            <img src="img/card2.png" alt="card 2">
+                            <img src="img/card2.jpg" alt="card 2">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -94,7 +106,12 @@
                     </div>
                     <div class="cards__item">
                         <div>
-                            <img src="img/card3.png" alt="card 3">
+                            <img src="img/card3.jpg" alt="card 3">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -107,7 +124,12 @@
                     </div>
                     <div class="cards__item">
                         <div>
-                            <img src="img/card4.png" alt="card 4">
+                            <img src="img/card4.jpg" alt="card 4">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -120,7 +142,12 @@
                     </div>
                     <div class="cards__item">
                         <div>
-                            <img src="img/card5.png" alt="card 5">
+                            <img src="img/card5.jpg" alt="card 5">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -133,7 +160,12 @@
                     </div>
                     <div class="cards__item">
                         <div>
-                            <img src="img/card6.png" alt="card 6">
+                            <img src="img/card6.jpg" alt="card 6">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -152,7 +184,7 @@
         <section class="offers">
             <div class="container offers__wrap">
                 <div class="offers__item">
-                    <img src="img/delivery.png" alt="delivery">
+                    <img src="img/delivery.svg" alt="delivery">
                     <h5>Free Delivery</h5>
                     <p>Worldwide delivery on all. Authorit tively morph
                         next-generation
@@ -160,7 +192,7 @@
                     </p>
                 </div>
                 <div class="offers__item">
-                    <img src="img/discounts.png" alt="discounts">
+                    <img src="img/discounts.svg" alt="discounts">
                     <h5>Sales & discounts</h5>
                     <p>Worldwide delivery on all. Authorit tively morph
                         next-generation
@@ -168,7 +200,7 @@
                     </p>
                 </div>
                 <div class="offers__item">
-                    <img src="img/assurance.png" alt="assurance">
+                    <img src="img/assurance.svg" alt="assurance">
                     <h5>Quality assurance</h5>
                     <p>Worldwide delivery on all. Authorit tively morph
                         next-generation
@@ -206,16 +238,16 @@
             </div>
             <div class="footer__right">
                 <a class="footer__right__groups" href="#">
-                    <img src="img/facebook.png" alt="">
+                    <i class="fab fa-facebook-f"></i>
                 </a>
                 <a class="footer__right__groups" href="#">
-                    <img src="img/instagram.png" alt="">
+                    <i class="fab fa-instagram"></i>
                 </a>
                 <a class="footer__right__groups" href="#">
-                    <img src="img/pinterest.png" alt="">
+                    <i class="fab fa-pinterest-p"></i>
                 </a>
                 <a class="footer__right__groups" href="#">
-                    <img src="img/twitter.png" alt="">
+                    <i class="fab fa-twitter"></i>
                 </a>
             </div>
         </div>
