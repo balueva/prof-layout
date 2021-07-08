@@ -12,26 +12,11 @@ $cart-textcolor: #575757;
         justify-content: space-between;
    } 
 
-   &__info {
-       width: 360px;
-   }
-
+   
    &__adress {
+       width: 360px;
         display: flex;
         flex-direction: column;
-
-        & h3 {
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 19px;
-            color: #222222;
-        }
-
-        & input {
-            padding: 16px;
-            margin-top: 20px;
-        }
 
         & button {
             font-weight: 300;

@@ -1,0 +1,127 @@
+$color1: lightgrey;
+$color2: #4A4A4A;
+
+@mixin set-border-color($top-color, $right-color, $bottom-color, $left-color, 
+    $width: 3px, $style: solid) {
+    border-top: $width $style $top-color;
+    border-right: $width $style $right-color;
+    border-bottom: $width $style $bottom-color;
+    border-left: $width $style $left-color;
+}
+
+@keyframes nice-button {
+    0% {
+        @include set-border-color($color1, $color1, $color1, $color1);
+    }
+
+    12% {
+        @include set-border-color($color2, $color1, $color1, $color1);
+    }
+
+    25% {
+        @include set-border-color($color2, $color2, $color1, $color1);
+    }
+
+    37% {
+        @include set-border-color($color2, $color2, $color2, $color1);
+    }
+
+    50% {
+        @include set-border-color($color2, $color2, $color2, $color2);
+    }
+
+    63% {
+        @include set-border-color($color1, $color2, $color2, $color2);
+    }
+
+    75% {
+        @include set-border-color($color1, $color1, $color2, $color2);
+    }
+
+    87% {
+        @include set-border-color($color1, $color1, $color1, $color2);
+    }
+
+    100% {
+        @include set-border-color($color1, $color1, $color1, $color1);
+    }
+}
+
+.registration {
+    margin-top: 64px;
+    margin-bottom: 96px;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+
+        & form {
+            width: 360px;
+
+            display: flex;
+            flex-direction: column;
+    
+            & p {
+                margin-top: 15px;
+                margin-bottom: 39px;
+    
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+                }
+     
+            & button {
+                padding: 16px 25px 16px 30px;
+                font-size: 14px;
+                line-height: 17px;
+                color: white;
+                background-color: $themecolor;
+                border: 3px solid $color1;
+                align-self: flex-start;
+                cursor: pointer;
+
+                animation: 2s nice-button infinite;
+                transition: color 0.5s;
+
+                &:hover {
+                    color: $color2;
+
+                    & img {
+                        fill: $color2;
+                    }
+                }
+
+                & >img {
+                    padding-left: 20px;
+                }
+            } 
+
+            .radio-group {
+                padding: 35px 0;
+            }
+        }
+
+        
+        &__list {
+            padding-left: 128px;
+
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: black;
+
+            & h4 {
+                margin-bottom: 20px;
+            }
+
+            & ul {
+                list-style: url(../img/tick.svg);
+                list-style-position: inside;            
+            }
+        }
+
+    }
+   
+}
+

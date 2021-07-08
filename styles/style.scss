@@ -13,6 +13,8 @@
     padding: 0 10px;
 }
 
+@import 'eforms';
+
 @import 'blocks/header';
 @import 'blocks/intro';
 @import 'blocks/category';
@@ -26,3 +28,4 @@
 @import 'blocks/slider';
 @import 'blocks/info';
 @import 'blocks/cart';
+@import 'blocks/registration';
