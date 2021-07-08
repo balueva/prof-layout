@@ -1,0 +1,137 @@
+/* родительски блоки карточек на разных страницах */
+
+
+/* карточка товара */
+.cards {
+    margin: 95px 0;
+}
+
+.cards__align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards__title {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.cards__description {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-bottom: 48px;
+}
+
+.cards__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards__item {
+    background-color: #F8F8F8;
+    width: 360px;
+    height: 580px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.cards__item__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.cards__item:hover .cards__item__overlay {
+    opacity: 1;
+}
+
+.cards__item__overlay button {
+    padding: 11px;
+    background:rgba(255, 255, 255, 0);
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.cards__item__overlay button > span {
+    padding-left: 11px;
+    align-self: center;
+}
+
+
+
+
+.cards__item__info {
+    margin: 25px 20px 20px 20px;
+}
+
+.cards__item__info a {
+    text-decoration: none;
+}
+
+.cards__item__info a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.cards__item__info h3 {
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: normal;  
+}
+
+.item__description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;   
+    color: #5D5D5D;
+
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+.item__price {
+    font-size: 16px;
+    line-height: 19px;    
+    color: #F16D7F;
+} 
+
+.cards__button {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    text-decoration: none;
+    border: #F26376 1px solid;
+    padding: 15px 40px;
+    margin-top: 18px;
+}
+
+.cards__button:hover {
+    color: white;
+    background-color: #F26376;
+}
+
+
+.catalog__wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards_margin {
+    margin-top: 130px;
+    margin-bottom: 100px;
+    padding: 0;
+}

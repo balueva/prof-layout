@@ -1,0 +1,32 @@
+.slider {
+    height: 777px;
+    background-color:  #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.slider > button {
+    height: 47px;
+    width: 47px;
+    padding: 12px 17px;
+    border: none;
+    background-color: rgba(42, 42, 42, 0.15);
+    align-self: center;
+}
+
+.slider > div {
+    padding-top: 11px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* css-фильтр-генератор 
+   https://codepen.io/sosuke/pen/Pjoqqp */
+.slider button:hover img {
+    filter: invert(55%) sepia(60%) 
+        saturate(1836%) hue-rotate(313deg) 
+        brightness(103%) contrast(89%);
+}

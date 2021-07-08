@@ -1,0 +1,36 @@
+.offers {
+    background-color: #222224;
+}
+
+.offers__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 103px 0;
+}
+
+.offers__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.offers__item img {
+   align-self: center;
+}
+
+.offers__item h5 {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+    margin: 28px 0 16px;
+}
+
+.offers__item p {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;    
+    color: #FBFBFB;
+    padding: 0 30px;
+}
