@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <title>Каталог товаров</title>
+
+    <script src="https://kit.fontawesome.com/b0f6f9cbd1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,12 +16,12 @@
         <div class="container header__wrap">
             <div class="header__left">
                 <a class="header__logo" href="index.html"> <img src="img/logo.png" alt=""> </a>
-                <img src="img/search.png" alt="">
+                <img src="img/search.svg" alt="">
             </div>
             <div class="header__right">
-                <a class="header__item" href="/"> <img src="img/catalog.png" alt=""> </a>
-                <a class="header__item" href="registration.html"> <img src="img/reg.png" alt=""> </a>
-                <a class="header__item" href="cart.html"> <img src="img/cart.png" alt=""> </a>
+                <a class="header__item" href="/"> <img src="img/catalog.svg" alt=""> </a>
+                <a class="header__item" href="registration.html"> <img src="img/reg.svg" alt=""> </a>
+                <a class="header__item" href="cart.html"> <img src="img/cart.svg" alt=""> </a>
             </div>
         </div>
     </header>
@@ -42,50 +44,62 @@
             <form class="catalog__wrap">
                 <div class="filter-panel__wrap">
                     <details class="filter-panel__wrap__main">
-                        <summary>FILTER<img src="img/filtermarker1.png" alt="main filter"> </summary>
-                        <details>
-                            <summary>CATEGORY</summary>
-                            <label> <input type="radio" name="category-filter" id="c1">Accessories</label>
-                            <label> <input type="radio" name="category-filter" id="c2">Bags</label>
-                            <label> <input type="radio" name="category-filter" id="c3">Denim</label>
-                            <label> <input type="radio" name="category-filter" id="c4">Hoodies & Sweatshirts</label>
-                            <label> <input type="radio" name="category-filter" id="c5">Jackets & Coats</label>
-                            <label> <input type="radio" name="category-filter" id="c6">Polos</label>
-                            <label> <input type="radio" name="category-filter" id="c7">Shirts</label>
-                            <label> <input type="radio" name="category-filter" id="c8">Shoes</label>
-                            <label> <input type="radio" name="category-filter" id="c9">Sweaters & Knits</label>
-                            <label> <input type="radio" name="category-filter" id="c10">T-Shirts</label>
-                            <label> <input type="radio" name="category-filter" id="c11">Tanks</label>
-                        </details>
-                        <details>
-                            <summary>BRAND</summary>
-                        </details>
-                        <details>
-                            <summary>DESIGNER</summary>
-                        </details>
+                        <summary>FILTER<img src="img/filtermarker1.svg" alt="main filter"> </summary>
+                        <div class="main_content">
+                            <details>
+                                <summary>CATEGORY</summary>
+                                <label> <input type="radio" name="category-filter" id="c1">Accessories</label>
+                                <label> <input type="radio" name="category-filter" id="c2">Bags</label>
+                                <label> <input type="radio" name="category-filter" id="c3">Denim</label>
+                                <label> <input type="radio" name="category-filter" id="c4">Hoodies &
+                                    Sweatshirts</label>
+                                <label> <input type="radio" name="category-filter" id="c5">Jackets &
+                                    Coats</label>
+                                <label> <input type="radio" name="category-filter" id="c6">Polos</label>
+                                <label> <input type="radio" name="category-filter" id="c7">Shirts</label>
+                                <label> <input type="radio" name="category-filter" id="c8">Shoes</label>
+                                <label> <input type="radio" name="category-filter" id="c9">Sweaters &
+                                    Knits</label>
+                                <label> <input type="radio" name="category-filter" id="c10">T-Shirts</label>
+                                <label> <input type="radio" name="category-filter" id="c11">Tanks</label>
+                            </details>
+                            <details>
+                                <summary>BRAND</summary>
+                            </details>
+                            <details>
+                                <summary>DESIGNER</summary>
+                            </details>
+                        </div>
                     </details>
 
                     <details>
-                        <summary>TRENDING NOW<img src="img/filtermarker2.png" alt="trending now filter"> </summary>
+                        <summary>TRENDING NOW<img src="img/filtermarker2.svg" alt="trending now filter"> </summary>
                     </details>
 
                     <details class="filter-panel__wrap__secondary">
-                        <summary>SIZE<img src="img/filtermarker2.png" alt="size filter"> </summary>
-                        <label class="nice-checkbox"><input type="checkbox"><span>XS</span></label>
-                        <label class="nice-checkbox"><input type="checkbox"><span>S</span></label>
-                        <label class="nice-checkbox"><input type="checkbox"><span>M</span></label>
-                        <label class="nice-checkbox"><input type="checkbox"><span>L</span></label>
+                        <summary>SIZE<img src="img/filtermarker2.svg" alt="size filter"> </summary>
+                        <div class="secondary_content">
+                            <label class="nice-checkbox"><input type="checkbox"><span>XS</span></label>
+                            <label class="nice-checkbox"><input type="checkbox"><span>S</span></label>
+                            <label class="nice-checkbox"><input type="checkbox"><span>M</span></label>
+                            <label class="nice-checkbox"><input type="checkbox"><span>L</span></label>
+                        </div>
                     </details>
 
                     <details>
-                        <summary>PRICE<img src="img/filtermarker2.png" alt="price filter"> </summary>
+                        <summary>PRICE<img src="img/filtermarker2.svg" alt="price filter"> </summary>
                     </details>
                 </div>
 
                 <div class="cards__wrap">
                     <div class="cards__item">
                         <div>
-                            <img src="img/card1.png" alt="card 1">
+                            <img src="img/card1.jpg" alt="card 1">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -98,7 +112,12 @@
                     </div>
                     <div class="cards__item">
                         <div>
-                            <img src="img/card7.png" alt="card 7">
+                            <img src="img/card7.jpg" alt="card 7">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -111,7 +130,12 @@
                     </div>
                     <div class="cards__item">
                         <div>
-                            <img src="img/card3.png" alt="card 3">
+                            <img src="img/card3.jpg" alt="card 3">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -124,7 +148,12 @@
                     </div>
                     <div class="cards__item">
                         <div>
-                            <img src="img/card4.png" alt="card 4">
+                            <img src="img/card4.jpg" alt="card 4">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -137,7 +166,12 @@
                     </div>
                     <div class="cards__item">
                         <div>
-                            <img src="img/card8.png" alt="card 8">
+                            <img src="img/card8.jpg" alt="card 8">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -150,7 +184,12 @@
                     </div>
                     <div class="cards__item">
                         <div>
-                            <img src="img/card9.png" alt="card 9">
+                            <img src="img/card9.jpg" alt="card 9">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -163,7 +202,12 @@
                     </div>
                     <div class="cards__item">
                         <div>
-                            <img src="img/card10.png" alt="card 10">
+                            <img src="img/card10.jpg" alt="card 10">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -176,7 +220,12 @@
                     </div>
                     <div class="cards__item">
                         <div>
-                            <img src="img/card11.png" alt="card 11">
+                            <img src="img/card11.jpg" alt="card 11">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -189,7 +238,12 @@
                     </div>
                     <div class="cards__item">
                         <div>
-                            <img src="img/card12.png" alt="card 12">
+                            <img src="img/card12.jpg" alt="card 12">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -204,23 +258,22 @@
                 </div>
 
                 <div class="pages">
-                    <button><img src="img/number-left.png" alt="previous page"> </button>
+                    <button><img src="img/number-left.svg" alt="previous page"> </button>
                     <button>1</button>
                     <button>2</button>
                     <button>3</button>
                     <button>4</button>
                     <button>5</button>
                     <button>6..20</button>
-                    <button><img src="img/number-right.png" alt="next page"></button>
+                    <button><img src="img/number-right.svg" alt="next page"></button>
                 </div>
             </form>
-
         </section>
 
         <section class="offers">
             <div class="container offers__wrap">
                 <div class="offers__item">
-                    <img src="img/delivery.png" alt="delivery">
+                    <img src="img/delivery.svg" alt="delivery">
                     <h5>Free Delivery</h5>
                     <p>Worldwide delivery on all. Authorit tively morph
                         next-generation
@@ -228,7 +281,7 @@
                     </p>
                 </div>
                 <div class="offers__item">
-                    <img src="img/discounts.png" alt="discounts">
+                    <img src="img/discounts.svg" alt="discounts">
                     <h5>Sales & discounts</h5>
                     <p>Worldwide delivery on all. Authorit tively morph
                         next-generation
@@ -236,7 +289,7 @@
                     </p>
                 </div>
                 <div class="offers__item">
-                    <img src="img/assurance.png" alt="assurance">
+                    <img src="img/assurance.svg" alt="assurance">
                     <h5>Quality assurance</h5>
                     <p>Worldwide delivery on all. Authorit tively morph
                         next-generation
@@ -274,16 +327,16 @@
             </div>
             <div class="footer__right">
                 <a class="footer__right__groups" href="#">
-                    <img src="img/facebook.png" alt="">
+                    <i class="fab fa-facebook-f"></i>
                 </a>
                 <a class="footer__right__groups" href="#">
-                    <img src="img/instagram.png" alt="">
+                    <i class="fab fa-instagram"></i>
                 </a>
                 <a class="footer__right__groups" href="#">
-                    <img src="img/pinterest.png" alt="">
+                    <i class="fab fa-pinterest-p"></i>
                 </a>
                 <a class="footer__right__groups" href="#">
-                    <img src="img/twitter.png" alt="">
+                    <i class="fab fa-twitter"></i>
                 </a>
             </div>
         </div>
