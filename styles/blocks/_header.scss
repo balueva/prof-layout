@@ -22,3 +22,25 @@
         }
     }    
 }
+
+@media (max-width: $phone-width) {
+    .header {
+        /*
+        &__right {
+            display: inline;
+            vertical-align: middle;
+        } */
+                
+        &__item {
+            /*vertical-align: bottom; */
+            
+            &:not(:first-child) {
+                display: none;
+            }
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -37,3 +37,21 @@
         }
     } 
 }
+
+@media (max-width: $phone-width) {
+    .footer {
+
+        &__wrap {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 43px 0 9px 0;
+        }
+
+        &__right {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+
+

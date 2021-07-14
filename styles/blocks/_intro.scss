@@ -13,7 +13,7 @@
     }
   
     &__text {
-        max-width: 430px;
+        width: 50%;
         border-left: 12px solid $themecolor;
         padding-left: 16px;
 
@@ -34,4 +34,47 @@
 
 .intro__text--color {
     color: $themecolor;
+}
+
+
+@media (max-width: $pad-width) {
+    .intro {
+        height: 367px;
+
+        &__wrap {
+            background-size: contain;
+            background-position-x: 0;
+        }
+    }
+
+    .intro__text--main {
+        font-size: 44px;
+    }
+    
+}
+
+
+
+@media (max-width: $phone-width) {
+    .intro {
+        height: 363px;
+
+        &__wrap {
+            background: none;
+        }
+
+        
+        &__text {
+            width: 100%;
+
+            & h1 {
+                font-size: 26px;
+            }
+        }
+    }
+
+    .intro__text--main {
+        font-size: 38px;
+    }
+    
 }
