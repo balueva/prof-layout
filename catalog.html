@@ -7,21 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <title>Каталог товаров</title>
+
+    <script src="https://kit.fontawesome.com/b0f6f9cbd1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
+        <input type="checkbox" id="burger">
+
         <div class="container header__wrap">
             <div class="header__left">
                 <a class="header__logo" href="index.html"> <img src="img/logo.png" alt=""> </a>
-                <img src="img/search.png" alt="">
+                <img src="img/search.svg" alt="">
             </div>
             <div class="header__right">
-                <a class="header__item" href="/"> <img src="img/catalog.png" alt=""> </a>
-                <a class="header__item" href="registration.html"> <img src="img/reg.png" alt=""> </a>
-                <a class="header__item" href="cart.html"> <img src="img/cart.png" alt=""> </a>
+
+                <label for="burger" class="header__menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <a class="header__item" href="registration.html"> <img src="img/reg.svg" alt=""> </a>
+                <a class="header__item" href="cart.html"> <img src="img/cart.svg" alt=""> </a>
             </div>
         </div>
+        <nav class="header__nav">
+            <div class="header__nav__wrap">
+                <label for="burger" class="menu-close">
+                    <i class="fas fa-times"></i>
+                </label>
+                <h2>MENU</h2>
+                <h3>MAN</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Denim</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                </ul>
+                <h3>WOMAN</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Jackets & Coats</a></li>
+                    <li><a href="#">Polos</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Shirts</a></li>
+                </ul>
+                <h3>KIDS</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Jackets & Coats</a></li>
+                    <li><a href="#">Polos</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Bags</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -42,50 +81,71 @@
             <form class="catalog__wrap">
                 <div class="filter-panel__wrap">
                     <details class="filter-panel__wrap__main">
-                        <summary>FILTER<img src="img/filtermarker1.png" alt="main filter"> </summary>
-                        <details>
-                            <summary>CATEGORY</summary>
-                            <label> <input type="radio" name="category-filter" id="c1">Accessories</label>
-                            <label> <input type="radio" name="category-filter" id="c2">Bags</label>
-                            <label> <input type="radio" name="category-filter" id="c3">Denim</label>
-                            <label> <input type="radio" name="category-filter" id="c4">Hoodies & Sweatshirts</label>
-                            <label> <input type="radio" name="category-filter" id="c5">Jackets & Coats</label>
-                            <label> <input type="radio" name="category-filter" id="c6">Polos</label>
-                            <label> <input type="radio" name="category-filter" id="c7">Shirts</label>
-                            <label> <input type="radio" name="category-filter" id="c8">Shoes</label>
-                            <label> <input type="radio" name="category-filter" id="c9">Sweaters & Knits</label>
-                            <label> <input type="radio" name="category-filter" id="c10">T-Shirts</label>
-                            <label> <input type="radio" name="category-filter" id="c11">Tanks</label>
-                        </details>
-                        <details>
-                            <summary>BRAND</summary>
-                        </details>
-                        <details>
-                            <summary>DESIGNER</summary>
-                        </details>
+                        <summary class="summary-left"><span>FILTER</span>
+                            <svg width="15" height="10" viewBox="0 0 15 10" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                            </svg>
+                        </summary>
+                        <div class="main_content">
+                            <details>
+                                <summary>CATEGORY</summary>
+                                <label> <input type="radio" name="category-filter" id="c1">Accessories</label>
+                                <label> <input type="radio" name="category-filter" id="c2">Bags</label>
+                                <label> <input type="radio" name="category-filter" id="c3">Denim</label>
+                                <label> <input type="radio" name="category-filter" id="c4">Hoodies &
+                                    Sweatshirts</label>
+                                <label> <input type="radio" name="category-filter" id="c5">Jackets &
+                                    Coats</label>
+                                <label> <input type="radio" name="category-filter" id="c6">Polos</label>
+                                <label> <input type="radio" name="category-filter" id="c7">Shirts</label>
+                                <label> <input type="radio" name="category-filter" id="c8">Shoes</label>
+                                <label> <input type="radio" name="category-filter" id="c9">Sweaters &
+                                    Knits</label>
+                                <label> <input type="radio" name="category-filter" id="c10">T-Shirts</label>
+                                <label> <input type="radio" name="category-filter" id="c11">Tanks</label>
+                            </details>
+                            <details>
+                                <summary>BRAND</summary>
+                            </details>
+                            <details>
+                                <summary>DESIGNER</summary>
+                            </details>
+                        </div>
                     </details>
 
-                    <details>
-                        <summary>TRENDING NOW<img src="img/filtermarker2.png" alt="trending now filter"> </summary>
-                    </details>
+                    <div class="filter-panel__wrap__right">
+                        <details>
+                            <summary><span>TRENDING NOW</span><i class="fas fa-chevron-down"></i></summary>
+                        </details>
 
-                    <details class="filter-panel__wrap__secondary">
-                        <summary>SIZE<img src="img/filtermarker2.png" alt="size filter"> </summary>
-                        <label class="nice-checkbox"><input type="checkbox"><span>XS</span></label>
-                        <label class="nice-checkbox"><input type="checkbox"><span>S</span></label>
-                        <label class="nice-checkbox"><input type="checkbox"><span>M</span></label>
-                        <label class="nice-checkbox"><input type="checkbox"><span>L</span></label>
-                    </details>
+                        <details class="filter-panel__wrap__secondary">
+                            <summary><span>SIZE</span><i class="fas fa-chevron-down"></i></summary>
+                            <div class="secondary_content">
+                                <label class="nice-checkbox"><input type="checkbox"><span>XS</span></label>
+                                <label class="nice-checkbox"><input type="checkbox"><span>S</span></label>
+                                <label class="nice-checkbox"><input type="checkbox"><span>M</span></label>
+                                <label class="nice-checkbox"><input type="checkbox"><span>L</span></label>
+                            </div>
+                        </details>
 
-                    <details>
-                        <summary>PRICE<img src="img/filtermarker2.png" alt="price filter"> </summary>
-                    </details>
+                        <details>
+                            <summary class="summary-right"><span>PRICE</span><i class="fas fa-chevron-down"></i>
+                            </summary>
+                        </details>
+                    </div>
                 </div>
 
                 <div class="cards__wrap">
                     <div class="cards__item">
-                        <div>
-                            <img src="img/card1.png" alt="card 1">
+                        <div class="cards__item__img">
+                            <img src="img/card1.jpg" alt="card 1">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -97,8 +157,13 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <div>
-                            <img src="img/card7.png" alt="card 7">
+                        <div class="cards__item__img">
+                            <img src="img/card7.jpg" alt="card 7">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -110,8 +175,13 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <div>
-                            <img src="img/card3.png" alt="card 3">
+                        <div class="cards__item__img">
+                            <img src="img/card3.jpg" alt="card 3">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -123,8 +193,13 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <div>
-                            <img src="img/card4.png" alt="card 4">
+                        <div class="cards__item__img">
+                            <img src="img/card4.jpg" alt="card 4">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -136,8 +211,13 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <div>
-                            <img src="img/card8.png" alt="card 8">
+                        <div class="cards__item__img">
+                            <img src="img/card8.jpg" alt="card 8">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -149,8 +229,13 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <div>
-                            <img src="img/card9.png" alt="card 9">
+                        <div class="cards__item__img">
+                            <img src="img/card9.jpg" alt="card 9">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -162,8 +247,13 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <div>
-                            <img src="img/card10.png" alt="card 10">
+                        <div class="cards__item__img">
+                            <img src="img/card10.jpg" alt="card 10">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -175,8 +265,13 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <div>
-                            <img src="img/card11.png" alt="card 11">
+                        <div class="cards__item__img">
+                            <img src="img/card11.jpg" alt="card 11">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -188,8 +283,13 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <div>
-                            <img src="img/card12.png" alt="card 12">
+                        <div class="cards__item__img">
+                            <img src="img/card12.jpg" alt="card 12">
+                        </div>
+                        <div class="cards__item__overlay">
+                            <button class="btn-add">
+                                <img src="img/cart.svg" alt=""><span>Add to Cart</span>
+                            </button>
                         </div>
                         <div class="cards__item__info">
                             <a href="#">
@@ -204,23 +304,22 @@
                 </div>
 
                 <div class="pages">
-                    <button><img src="img/number-left.png" alt="previous page"> </button>
+                    <button><img src="img/number-left.svg" alt="previous page"> </button>
                     <button>1</button>
                     <button>2</button>
                     <button>3</button>
                     <button>4</button>
                     <button>5</button>
                     <button>6..20</button>
-                    <button><img src="img/number-right.png" alt="next page"></button>
+                    <button><img src="img/number-right.svg" alt="next page"></button>
                 </div>
             </form>
-
         </section>
 
         <section class="offers">
             <div class="container offers__wrap">
                 <div class="offers__item">
-                    <img src="img/delivery.png" alt="delivery">
+                    <img src="img/delivery.svg" alt="delivery">
                     <h5>Free Delivery</h5>
                     <p>Worldwide delivery on all. Authorit tively morph
                         next-generation
@@ -228,7 +327,7 @@
                     </p>
                 </div>
                 <div class="offers__item">
-                    <img src="img/discounts.png" alt="discounts">
+                    <img src="img/discounts.svg" alt="discounts">
                     <h5>Sales & discounts</h5>
                     <p>Worldwide delivery on all. Authorit tively morph
                         next-generation
@@ -236,7 +335,7 @@
                     </p>
                 </div>
                 <div class="offers__item">
-                    <img src="img/assurance.png" alt="assurance">
+                    <img src="img/assurance.svg" alt="assurance">
                     <h5>Quality assurance</h5>
                     <p>Worldwide delivery on all. Authorit tively morph
                         next-generation
@@ -274,16 +373,16 @@
             </div>
             <div class="footer__right">
                 <a class="footer__right__groups" href="#">
-                    <img src="img/facebook.png" alt="">
+                    <i class="fab fa-facebook-f"></i>
                 </a>
                 <a class="footer__right__groups" href="#">
-                    <img src="img/instagram.png" alt="">
+                    <i class="fab fa-instagram"></i>
                 </a>
                 <a class="footer__right__groups" href="#">
-                    <img src="img/pinterest.png" alt="">
+                    <i class="fab fa-pinterest-p"></i>
                 </a>
                 <a class="footer__right__groups" href="#">
-                    <img src="img/twitter.png" alt="">
+                    <i class="fab fa-twitter"></i>
                 </a>
             </div>
         </div>
