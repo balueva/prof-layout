@@ -13,7 +13,7 @@
     }
 
     &__photo {
-        width: 360px;
+        max-width: $card-width;
         align-self: center;
         display: flex;
         flex-direction: column;

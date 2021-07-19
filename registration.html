@@ -13,18 +13,57 @@
 
 <body>
     <header class="header">
+        <input type="checkbox" id="burger">
+
         <div class="container header__wrap">
             <div class="header__left">
                 <a class="header__logo" href="index.html"> <img src="img/logo.png" alt=""> </a>
                 <img src="img/search.svg" alt="">
             </div>
             <div class="header__right">
-                <a class="header__item" href="catalog.html"> <img src="img/catalog.svg" alt=""> </a>
-                <a class="header__item" href="#"> <img src="img/reg.svg" alt=""> </a>
+
+                <label for="burger" class="header__menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <a class="header__item" href="/"> <img src="img/reg.svg" alt=""> </a>
                 <a class="header__item" href="cart.html"> <img src="img/cart.svg" alt=""> </a>
             </div>
+
         </div>
+        <nav class="header__nav">
+            <div class="header__nav__wrap">
+                <label for="burger" class="menu-close">
+                    <i class="fas fa-times"></i>
+                </label>
+                <h2>MENU</h2>
+                <h3>MAN</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Denim</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                </ul>
+                <h3>WOMAN</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Jackets & Coats</a></li>
+                    <li><a href="#">Polos</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Shirts</a></li>
+                </ul>
+                <h3>KIDS</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Jackets & Coats</a></li>
+                    <li><a href="#">Polos</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Bags</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
     <header class="breadcrumb-panel">
         <div class="container breadcrumb-panel__wrap">
             <h1>REGISTRATION</h1>
@@ -55,8 +94,8 @@
                         <p>Please use 8 or more characters, with at least 1 number and a mixture of
                             uppercase and
                             lowercase letters</p>
-                        <button>JOIN NOW
-                            <img src="img/arrow-right.svg" alt="">
+                        <button>
+                            <span>JOIN NOW</span><i class="fas fa-long-arrow-alt-right"></i>
                         </button>
                     </form>
                 </div>
@@ -87,6 +126,7 @@
                 <div class="subscribe__do">
                     <h6 class="subscribe-text"><span class="subscribe-text-big">SUBSCRIBE </span>
                         FOR OUR NEWLETTER AND PROMOTION</h6>
+
                     <form class="subscribe__form" action="#">
                         <input type="email" class="subscribe__form__email" required placeholder="Enter Your Email">
                         <button type="submit" class="subscribe__form__button">Subscribe</button>

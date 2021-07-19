@@ -1,32 +1,52 @@
 .slider {
     height: 777px;
-    background-color:  #F7F7F7;
+    background-color:#F7F7F7; 
+    
     display: flex;
     justify-content: space-between;
+    /*border: 1px solid blue; */
+
+    & > button {
+        height: 47px;
+        width: 47px;
+        padding: 12px 17px;
+        border: none;
+        background-color: rgba(42, 42, 42, 0.15);
+        align-self: center;
+        font-size: 18px;
+
+        &:hover {
+            color: $themecolor;
+        }
+    }
+
+    & > div {
+        overflow: hidden;
+        padding: 24px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        /* border: 1px solid yellowgreen;*/
+    } 
 }
 
+@media (max-width: $pad-width) {
+    .slider {
+        height: 624px;
 
-.slider > button {
-    height: 47px;
-    width: 47px;
-    padding: 12px 17px;
-    border: none;
-    background-color: rgba(42, 42, 42, 0.15);
-    align-self: center;
+        & > div {
+            padding: 28px 0;
+        }
+    }
 }
 
-.slider > div {
-    padding-top: 11px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+@media (max-width: $phone-width) {
+    .slider {
+
+        & > div {
+            padding: 105px 0;
+        }
+    }
 }
 
-
-/* css-фильтр-генератор 
-   https://codepen.io/sosuke/pen/Pjoqqp */
-.slider button:hover img {
-    filter: invert(55%) sepia(60%) 
-        saturate(1836%) hue-rotate(313deg) 
-        brightness(103%) contrast(89%);
-}

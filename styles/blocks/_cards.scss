@@ -48,10 +48,14 @@
 
 .cards__item {
     background-color: #F8F8F8;
-    width: 360px;
+    width: $card-width;
     height: 580px;
     margin-bottom: 30px;
     position: relative;
+
+    &__img > img {
+        width: 100%;
+    }
 
     &:hover &__overlay {
         opacity: 1;
@@ -133,7 +137,8 @@
     flex-direction: column;
 }
 
-.cards_margin {
+/* блок карточек на странице товара */
+.cards-product {
     margin-top: 130px;
     margin-bottom: 100px;
     padding: 0;
@@ -160,5 +165,10 @@
         &__description {
             margin-bottom: 72px;    
         }
+    }
+
+    .cards-product {
+        margin-top: 64px;
+        margin-bottom: 49px;
     }
 }

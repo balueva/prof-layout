@@ -13,17 +13,55 @@
 
 <body>
     <header class="header">
+        <input type="checkbox" id="burger">
+
         <div class="container header__wrap">
             <div class="header__left">
                 <a class="header__logo" href="index.html"> <img src="img/logo.png" alt=""> </a>
                 <img src="img/search.svg" alt="">
             </div>
             <div class="header__right">
-                <a class="header__item" href="catalog.html"> <img src="img/catalog.svg" alt=""> </a>
+
+                <label for="burger" class="header__menu">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <a class="header__item" href="registration.html"> <img src="img/reg.svg" alt=""> </a>
-                <a class="header__item" href="cart.html"> <img src="img/cart.svg" alt=""> </a>
+                <a class="header__item" href="/"> <img src="img/cart.svg" alt=""> </a>
             </div>
+
         </div>
+        <nav class="header__nav">
+            <div class="header__nav__wrap">
+                <label for="burger" class="menu-close">
+                    <i class="fas fa-times"></i>
+                </label>
+                <h2>MENU</h2>
+                <h3>MAN</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Denim</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                </ul>
+                <h3>WOMAN</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Jackets & Coats</a></li>
+                    <li><a href="#">Polos</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Shirts</a></li>
+                </ul>
+                <h3>KIDS</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Jackets & Coats</a></li>
+                    <li><a href="#">Polos</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Bags</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <header class="breadcrumb-panel">
@@ -33,8 +71,10 @@
     </header>
 
     <main>
+
         <section class="cart">
             <form class="container cart__wrap">
+
                 <div class="cart__content">
                     <div class="cart__item">
                         <div class="cart__item__photo">
@@ -49,10 +89,9 @@
                                 <input type="number" name="item3-count" value="2">
                             </p>
                         </div>
-                        <button>
-                            <img src="img/cross.svg" alt="delete item">
-                        </button>
+                        <button>&#215;</button>
                     </div>
+
                     <div class="cart__item">
                         <div class="cart__item__photo">
                             <img src="img/card7.jpg" alt="">
@@ -66,28 +105,30 @@
                                 <input type="number" name="item7-count" value="1">
                             </p>
                         </div>
-                        <button>
-                            <img src="img/cross.svg" alt="delete item">
-                        </button>
+                        <button>&#215;</button>
                     </div>
+
                     <div class="cart__buttons">
-                        <button>CLEAR SHOPPING CART</button>
-                        <button>CONTINUE SHOPPING</button>
+                        <button>Clear shopping cart</button>
+                        <button>Continue shopping</button>
                     </div>
                 </div>
+
                 <div class="cart__info">
-                    <div class="cart__adress">
-                        <h3>SHIPPING ADRESS</h3>
-                        <input class="input-text" type="text" name="adress-city" placeholder="Bangladesh">
-                        <input class="input-text" type="text" name="adress-country" placeholder="State">
-                        <input class="input-text" type="text" name="adress-postcode" placeholder="Postcode / Zip">
-                        <button>GET A QUOTE</button>
-                    </div>
-                    <div class="cart__summary">
-                        <p class="p1">SUB TOTAL $900</p>
-                        <p class="p2">GRAND TOTAL <span class="decor">$900</span></p>
-                        <hr>
-                        <button>PROCEED TO CHECKOUT</button>
+                    <h3>SHIPPING ADRESS</h3>
+                    <div>
+                        <div class="cart__adress">
+                            <input class="input-text" type="text" name="adress-city" placeholder="Bangladesh">
+                            <input class="input-text" type="text" name="adress-country" placeholder="State">
+                            <input class="input-text" type="text" name="adress-postcode" placeholder="Postcode / Zip">
+                            <button>Get a quote</button>
+                        </div>
+                        <div class="cart__summary">
+                            <p class="p1">SUB TOTAL $900</p>
+                            <p class="p2">GRAND TOTAL <span class="decor">$900</span></p>
+                            <hr>
+                            <button>PROCEED TO CHECKOUT</button>
+                        </div>
                     </div>
                 </div>
             </form>

@@ -13,17 +13,55 @@
 
 <body>
     <header class="header">
+        <input type="checkbox" id="burger">
+
         <div class="container header__wrap">
             <div class="header__left">
                 <a class="header__logo" href="index.html"> <img src="img/logo.png" alt=""> </a>
                 <img src="img/search.svg" alt="">
             </div>
             <div class="header__right">
-                <a class="header__item" href="catalog.html"> <img src="img/catalog.svg" alt=""> </a>
+
+                <label for="burger" class="header__menu">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <a class="header__item" href="registration.html"> <img src="img/reg.svg" alt=""> </a>
                 <a class="header__item" href="cart.html"> <img src="img/cart.svg" alt=""> </a>
             </div>
+
         </div>
+        <nav class="header__nav">
+            <div class="header__nav__wrap">
+                <label for="burger" class="menu-close">
+                    <i class="fas fa-times"></i>
+                </label>
+                <h2>MENU</h2>
+                <h3>MAN</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Denim</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                </ul>
+                <h3>WOMAN</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Jackets & Coats</a></li>
+                    <li><a href="#">Polos</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Shirts</a></li>
+                </ul>
+                <h3>KIDS</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Jackets & Coats</a></li>
+                    <li><a href="#">Polos</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Bags</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -42,44 +80,51 @@
         <section>
             <div class="slider">
                 <button>
-                    <img src="img/number-left.svg" alt="slider left">
+                    <i class="fas fa-chevron-left"></i>
                 </button>
+
                 <div>
+
                     <img src="img/slider_card.jpg" alt="product photo">
+
                 </div>
-                <button><img src="img/number-right.svg" alt="slider right"></button>
+                <button>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
 
             <div class="container info">
-                <h2>WOMEN COLLECTION</h2>
-                <hr class="info__line1">
-                <p class="info__title">MOSCHINO CHEAP AND CHIC</p>
-                <p class="info__description">Compellingly actualize fully researched processes before proactive
-                    outsourcing.
-                    Progressively syndicate
-                    collaborative architectures before cutting-edge services. Completely visualize parallel core
-                    competencies rather than exceptional portals.</p>
-                <p class="info__price">$561</p>
-                <hr class="info__line2">
-                <div class="filter-panel__wrap">
-                    <details>
-                        <summary>CHOOSE COLOR <img src="img/filtermarker2.svg" alt="choose color filter"> </summary>
-                    </details>
-                    <details>
-                        <summary>CHOOSE SIZE <img src="img/filtermarker2.svg" alt="choose size filter"> </summary>
-                    </details>
-                    <details>
-                        <summary>QUANTITY <img src="img/filtermarker2.svg" alt="choose quantity filter"> </summary>
-                    </details>
-                </div>
+                <div class="info__wrap">
+                    <h2>WOMEN COLLECTION</h2>
+                    <hr class="info__line1">
+                    <p class="info__title">MOSCHINO CHEAP AND CHIC</p>
+                    <p class="info__description">Compellingly actualize fully researched processes before proactive
+                        outsourcing.
+                        Progressively syndicate
+                        collaborative architectures before cutting-edge services. Completely visualize parallel core
+                        competencies rather than exceptional portals.</p>
+                    <p class="info__price">$561</p>
+                    <hr class="info__line2">
+                    <div class="filter-panel__wrap font-correct">
+                        <details>
+                            <summary>CHOOSE COLOR <i class="fas fa-chevron-down"></i></summary>
+                        </details>
+                        <details>
+                            <summary>CHOOSE SIZE <i class="fas fa-chevron-down"></i></summary>
+                        </details>
+                        <details>
+                            <summary>QUANTITY <i class="fas fa-chevron-down"></i></summary>
+                        </details>
+                    </div>
 
-                <button class="info__add"><img src="img/cart.svg" alt=""><span>Add to Cart</span></button>
+                    <button class="info__add"><img src="img/cart.svg" alt=""><span>Add to Cart</span></button>
+                </div>
             </div>
         </section>
 
-        <section class="container cards__wrap cards_margin">
+        <section class="container cards__wrap cards-product">
             <div class="cards__item">
-                <div>
+                <div class="cards__item__img">
                     <img src="img/card4.jpg" alt="card 4">
                 </div>
                 <div class="cards__item__overlay">
@@ -97,7 +142,7 @@
                 </div>
             </div>
             <div class="cards__item">
-                <div>
+                <div class="cards__item__img">
                     <img src="img/card5.jpg" alt="card 6">
                 </div>
                 <div class="cards__item__overlay">
@@ -116,7 +161,7 @@
             </div>
 
             <div class="cards__item">
-                <div>
+                <div class="cards__item__img">
                     <img src="img/card6.jpg" alt="card 6">
                 </div>
                 <div class="cards__item__overlay">

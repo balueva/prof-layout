@@ -13,17 +13,55 @@
 
 <body>
     <header class="header">
+        <input type="checkbox" id="burger">
+
         <div class="container header__wrap">
             <div class="header__left">
                 <a class="header__logo" href="/"> <img src="img/logo.png" alt=""> </a>
                 <img src="img/search.svg" alt="">
             </div>
             <div class="header__right">
-                <a class="header__item" href="catalog.html"> <img src="img/catalog.svg" alt=""> </a>
+
+                <label for="burger" class="header__menu">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <a class="header__item" href="registration.html"> <img src="img/reg.svg" alt=""> </a>
                 <a class="header__item" href="cart.html"> <img src="img/cart.svg" alt=""> </a>
             </div>
+
         </div>
+        <nav class="header__nav">
+            <div class="header__nav__wrap">
+                <label for="burger" class="menu-close">
+                    <i class="fas fa-times"></i>
+                </label>
+                <h2>MENU</h2>
+                <h3>MAN</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Denim</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                </ul>
+                <h3>WOMAN</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Jackets & Coats</a></li>
+                    <li><a href="#">Polos</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Shirts</a></li>
+                </ul>
+                <h3>KIDS</h3>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Jackets & Coats</a></li>
+                    <li><a href="#">Polos</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Bags</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -69,7 +107,7 @@
                 <p class="cards__description">Shop for items based on what we featured in this week</p>
                 <div class="cards__wrap">
                     <div class="cards__item">
-                        <div>
+                        <div class="cards__item__img">
                             <img src="img/card1.jpg" alt="card 1">
                         </div>
                         <div class="cards__item__overlay">
@@ -87,7 +125,7 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <div>
+                        <div class="cards__item__img">
                             <img src="img/card2.jpg" alt="card 2">
                         </div>
                         <div class="cards__item__overlay">
@@ -105,7 +143,7 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <div>
+                        <div class="cards__item__img">
                             <img src="img/card3.jpg" alt="card 3">
                         </div>
                         <div class="cards__item__overlay">
@@ -123,7 +161,7 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <div>
+                        <div class="cards__item__img">
                             <img src="img/card4.jpg" alt="card 4">
                         </div>
                         <div class="cards__item__overlay">
@@ -141,7 +179,7 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <div>
+                        <div class="cards__item__img">
                             <img src="img/card5.jpg" alt="card 5">
                         </div>
                         <div class="cards__item__overlay">
@@ -159,7 +197,7 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <div>
+                        <div class="cards__item__img">
                             <img src="img/card6.jpg" alt="card 6">
                         </div>
                         <div class="cards__item__overlay">
