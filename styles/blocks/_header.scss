@@ -1,0 +1,127 @@
+
+.header {
+    background-color: #222222;
+    display: flex;
+    justify-content: flex-end; 
+    position: relative;
+    z-index: 10; 
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    &__logo {
+        margin-right: 41px;
+
+        &:hover {
+            @include hover-params;
+        }
+    }
+
+    &__menu {
+        color: #E8E8E8;
+        font-size: 34px;
+        cursor: pointer;
+
+        &:hover {
+            @include hover-params;
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        background-color: white;
+        /* outline: 1px solid green; */
+        top: 78px;
+        right: 0;
+        z-index: 12;
+        width: 232px;
+        height: calc(100vh - 78px);
+        overflow-x: scroll;
+
+        color: #6F6E6E;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 33px;
+
+        &__wrap {
+            position: relative;
+
+            & .menu-close {
+                position: absolute;
+                cursor: pointer;
+                
+                top: -16px; 
+                right: -16px;
+
+                &:hover {
+                    @include hover-params;
+                }
+            }
+
+            & h2 {
+                color: black;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+
+            & h3 {
+                padding-top: 20px;
+                color: $themecolor;
+            }
+
+            & ul {
+                list-style: none;
+
+                & li {
+                    
+                    padding-top: 10px;
+                    padding-left: 20px;
+
+                    & a {
+                        color: inherit;
+                    }
+                }
+            }
+        }
+    }
+
+    &__item {
+        margin-left: 33px;
+    }    
+}
+
+
+#burger {
+    display: none;
+}
+
+
+#burger:checked ~ .header_nav {
+    display: block; 
+  }
+  
+  #burger:not(:checked) ~ .header__nav {
+    display: none; 
+  }
+
+
+@media (max-width: $phone-width) {
+    .header {
+                
+        &__item {
+            
+            &:not(:first-child) {
+                display: none;
+            }
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+}
