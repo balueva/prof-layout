@@ -14,14 +14,21 @@
     }
 
     &__logo {
-        text-decoration: none;
         margin-right: 41px;
+
+        &:hover {
+            @include hover-params;
+        }
     }
 
     &__menu {
         color: #E8E8E8;
         font-size: 34px;
         cursor: pointer;
+
+        &:hover {
+            @include hover-params;
+        }
     }
 
     &__nav {
@@ -50,6 +57,10 @@
                 
                 top: -16px; 
                 right: -16px;
+
+                &:hover {
+                    @include hover-params;
+                }
             }
 
             & h2 {
@@ -70,8 +81,8 @@
                     
                     padding-top: 10px;
                     padding-left: 20px;
+
                     & a {
-                        text-decoration: none;
                         color: inherit;
                     }
                 }
@@ -80,7 +91,6 @@
     }
 
     &__item {
-        text-decoration: none;
         margin-left: 33px;
     }    
 }

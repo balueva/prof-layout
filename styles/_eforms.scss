@@ -11,6 +11,10 @@
     color: #B1B1B1;
 
     border: 1px solid #A4A4A4;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 form h3 {
@@ -44,6 +48,7 @@ form h3 {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;   
+    cursor: pointer;
 }
 .nice-checkbox span:before {
 	content: "";
@@ -65,7 +70,12 @@ form h3 {
 .nice-checkbox span:active:before {
 	filter: brightness(80%); 
 }
- 
+
+.nice-checkbox span:hover, 
+.nice-checkbox span:active{
+	@include hover-params; 
+}
+
 .nice-checkbox input[type=checkbox]:disabled + span {
 	color: #6F6E6E;
 }

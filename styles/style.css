@@ -6,6 +6,26 @@
           box-sizing: border-box;
 }
 
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: min-content 1fr min-content;
+      grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+      grid-template-rows: min-content 1fr min-content;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:not(.footer__right__groups):hover {
+  opacity: 0.7;
+}
+
 .container {
   max-width: 1140px;
   width: 100%;
@@ -37,6 +57,10 @@
   line-height: 16px;
   color: #B1B1B1;
   border: 1px solid #A4A4A4;
+}
+
+.input-text:focus {
+  outline: none;
 }
 
 form h3 {
@@ -74,6 +98,7 @@ form h3 {
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
+  cursor: pointer;
 }
 
 .nice-checkbox span:before {
@@ -95,6 +120,11 @@ form h3 {
 .nice-checkbox span:active:before {
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
+}
+
+.nice-checkbox span:hover,
+.nice-checkbox span:active {
+  opacity: 0.7;
 }
 
 .nice-checkbox input[type=checkbox]:disabled + span {
@@ -173,14 +203,21 @@ form h3 {
 }
 
 .header__logo {
-  text-decoration: none;
   margin-right: 41px;
+}
+
+.header__logo:hover {
+  opacity: 0.7;
 }
 
 .header__menu {
   color: #E8E8E8;
   font-size: 34px;
   cursor: pointer;
+}
+
+.header__menu:hover {
+  opacity: 0.7;
 }
 
 .header__nav {
@@ -211,6 +248,10 @@ form h3 {
   right: -16px;
 }
 
+.header__nav__wrap .menu-close:hover {
+  opacity: 0.7;
+}
+
 .header__nav__wrap h2 {
   color: black;
   padding-top: 4px;
@@ -232,12 +273,10 @@ form h3 {
 }
 
 .header__nav__wrap ul li a {
-  text-decoration: none;
   color: inherit;
 }
 
 .header__item {
-  text-decoration: none;
   margin-left: 33px;
 }
 
@@ -358,12 +397,15 @@ form h3 {
   text-align: center;
   height: 180px;
   width: 100%;
+}
+
+.category__item a span {
   font-size: 16px;
   line-height: 19px;
   color: white;
 }
 
-.category__item h3 {
+.category__item a h3 {
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
@@ -371,7 +413,6 @@ form h3 {
 }
 
 .category__item:not(:last-child) {
-  /* width: 360px; */
   width: calc(33.33% - 20px);
   margin: 0 0 30px 0;
   height: 260px;
@@ -459,7 +500,6 @@ form h3 {
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
-  text-decoration: none;
   border: #F16D7F 1px solid;
   padding: 15px 40px;
   margin-top: 18px;
@@ -530,6 +570,12 @@ form h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white 1px solid;
+  cursor: pointer;
+}
+
+.cards__item__overlay button:hover {
+  opacity: 0.7;
 }
 
 .cards__item__overlay button > span {
@@ -543,20 +589,9 @@ form h3 {
   margin: 25px 20px 20px 20px;
 }
 
-.cards__item__info a {
-  text-decoration: none;
-}
-
-.cards__item__info a:hover {
-  text-decoration: underline;
-  -webkit-text-decoration-color: black;
-          text-decoration-color: black;
-}
-
 .cards__item__info h3 {
   font-size: 13px;
   line-height: 16px;
-  text-decoration: none;
   color: black;
   font-weight: normal;
 }
@@ -763,11 +798,18 @@ form h3 {
   background-color: #E1E1E1;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  border: none;
+  border: #E1E1E1 1px solid;
   display: block;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.subscribe__form input:focus {
+  outline: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: #6F6E6E 1px solid;
 }
 
 .subscribe__form button {
@@ -779,8 +821,13 @@ form h3 {
   background-color: #F16D7F;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  border: none;
+  border: #F16D7F 1px solid;
   display: block;
+  cursor: pointer;
+}
+
+.subscribe__form button:hover {
+  opacity: 0.7;
 }
 
 .subscribe-text {
@@ -878,7 +925,6 @@ form h3 {
 .footer__right__groups {
   background-color: white;
   color: black;
-  text-decoration: none;
   padding: 8px;
   display: block;
   width: 32px;
@@ -957,7 +1003,6 @@ form h3 {
   font-size: 14px;
   line-height: 17px;
   color: #636363;
-  text-decoration: none;
 }
 
 @media (max-width: 734px) {
@@ -986,14 +1031,20 @@ form h3 {
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
+  position: relative;
 }
 
 .filter-panel__wrap summary {
   list-style: none;
+  cursor: pointer;
 }
 
 .filter-panel__wrap summary::-webkit-details-marker {
   display: none;
+}
+
+.filter-panel__wrap summary:hover {
+  opacity: 0.7;
 }
 
 .filter-panel__wrap details {
@@ -1011,8 +1062,11 @@ form h3 {
 }
 
 .filter-panel__wrap__main {
-  position: relative;
+  position: absolute;
   width: 375px;
+  top: 51px;
+  z-index: 2;
+  background-color: white;
 }
 
 .filter-panel__wrap__main[open] {
@@ -1038,24 +1092,41 @@ form h3 {
   border-bottom: #EBEBEB 1px solid;
   padding: 12px;
   margin: 0 17px 15px 17px;
+  color: #6F6E6E;
 }
 
-.filter-panel__wrap__main details label {
+.filter-panel__wrap__main details ul {
+  list-style: none;
+}
+
+.filter-panel__wrap__main details ul li {
   padding: 6px 11px 6px 17px;
   margin-left: 17px;
 }
 
-.filter-panel__wrap__main details input[type="radio"] {
-  display: none;
+.filter-panel__wrap__main a {
+  color: #6F6E6E;
 }
 
 .filter-panel__wrap__main .main_content {
-  position: absolute;
   width: 375px;
   background-color: white;
-  z-index: 2;
-  -webkit-box-shadow: 0 0 30px 10px #EBEBEB;
-          box-shadow: 0 0 30px 10px #EBEBEB;
+  /*@include filter-shadow();*/
+}
+
+.filter-panel__wrap__left {
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
+.filter-panel__wrap__left span {
+  padding-right: 10px;
 }
 
 .filter-panel__wrap__right {
@@ -1094,6 +1165,9 @@ form h3 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .filter-panel__wrap__main {
+    top: 24px;
+  }
   .filter-panel__wrap .summary-left {
     padding-left: 0;
   }
@@ -1108,8 +1182,14 @@ form h3 {
     font-size: 12px;
     line-height: 14px;
   }
+  .filter-panel__wrap__left {
+    width: 40px;
+  }
   .filter-panel__wrap__main {
     width: 40px;
+  }
+  .filter-panel__wrap__main[open] {
+    width: 340px;
   }
   .filter-panel__wrap__main span {
     display: none;
@@ -1359,6 +1439,11 @@ form h3 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cart__adress button:hover {
+  opacity: 0.7;
 }
 
 .cart__summary {
@@ -1409,6 +1494,11 @@ form h3 {
   padding: 15px 40px;
   border: none;
   background-color: #F16D7F;
+  cursor: pointer;
+}
+
+.cart__summary button:hover {
+  opacity: 0.7;
 }
 
 .cart__item {
@@ -1452,7 +1542,7 @@ form h3 {
   color: #656565;
   padding: 0 16px;
   margin-left: 24px;
-  width: 44px;
+  width: 20%;
 }
 
 .cart__item__about input::-webkit-outer-spin-button, .cart__item__about input::-webkit-inner-spin-button {
@@ -1463,6 +1553,11 @@ form h3 {
   -webkit-appearance: none;
           appearance: none;
   -moz-appearance: textfield;
+}
+
+.cart__item__about input:focus {
+  outline: none;
+  border: 1px solid #EAEAEA;
 }
 
 .cart__item__about .quantity {
@@ -1480,6 +1575,11 @@ form h3 {
   font-size: 34px;
   line-height: 17px;
   color: #575757;
+  cursor: pointer;
+}
+
+.cart__item button:hover {
+  opacity: 0.7;
 }
 
 .cart__buttons {
@@ -1500,6 +1600,11 @@ form h3 {
   line-height: 17px;
   color: black;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cart__buttons button:hover {
+  opacity: 0.7;
 }
 
 @media (max-width: 1139px) {
@@ -1566,6 +1671,7 @@ form h3 {
   .cart__item__about input {
     font-size: 10px;
     line-height: 12px;
+    padding: 0 6px;
   }
   .cart__item button {
     padding: 12px 12px 0 0;

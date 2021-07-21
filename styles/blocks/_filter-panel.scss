@@ -9,12 +9,18 @@
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
+    position: relative;
 
     & summary {
         list-style: none;
+        cursor: pointer;
 
         &::-webkit-details-marker {
             display: none;
+        }
+
+        &:hover {
+            @include hover-params;
         }
     }
     
@@ -31,8 +37,11 @@
     }
     
     &__main {
-        position: relative;
+        position: absolute;
         width: 375px;   
+        top: 51px;
+        z-index: 2;
+        background-color: white;
         
         &[open] {
             @include filter-shadow();
@@ -57,26 +66,43 @@
                 border-bottom: #EBEBEB 1px solid;
                 padding: 12px;
                 margin: 0 17px 15px 17px;
+                color: #6F6E6E;
             }
 
-            & label {
-                padding: 6px 11px 6px 17px;
-                margin-left: 17px;
+            & ul {
+                list-style: none;
+
+                & li {
+                    padding: 6px 11px 6px 17px;
+                    margin-left: 17px;
+
+                }
             }
 
-            & input[type="radio"] {
-                display: none;    
-            }
         }
+
+        & a {
+            color: #6F6E6E;
+        }
+    
 
         & .main_content {
-            position: absolute;
             width: 375px;
             background-color: white;
-            z-index: 2;
-            @include filter-shadow();
+            /*@include filter-shadow();*/
         }
         
+    }
+
+    &__left {
+        width: 360px;
+        display: flex;
+        align-items: center;
+        color: black;
+
+            & span {
+                padding-right: 10px;
+        }
     }
 
     &__right {
@@ -111,6 +137,10 @@
 
         justify-content: space-between;
 
+        &__main {
+            top: 24px;
+        }
+        
         & .summary-left {
             padding-left: 0;
         }
@@ -129,9 +159,17 @@
         font-size: 12px;
         line-height: 14px;
     
+        &__left {
+            width: 40px;
+        }
+        
         &__main {
 
             width: 40px;
+
+            &[open] {
+                width: 340px;
+            }
 
             & span {
                 display: none;

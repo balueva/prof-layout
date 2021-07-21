@@ -29,6 +29,11 @@ $cart-textcolor: #575757;
             padding: 10px 14px;
             align-self: flex-start;
             text-transform:  uppercase;
+            cursor: pointer;
+
+            &:hover {
+                @include hover-params;
+            }
         }
     }
 
@@ -72,6 +77,11 @@ $cart-textcolor: #575757;
             padding: 15px 40px;
             border: none;
             background-color: $themecolor;
+            cursor: pointer;
+
+            &:hover {
+                @include hover-params;
+            }
         }
    }
 
@@ -92,6 +102,7 @@ $cart-textcolor: #575757;
             line-height: 26px;
             color: $cart-textcolor;
 
+            
             & h4 {
                 font-style: normal;
                 font-weight: normal;
@@ -111,7 +122,7 @@ $cart-textcolor: #575757;
                 color: #656565;
                 padding: 0 16px;
                 margin-left: 24px;
-                width: 44px;
+                width: 20%;
 
                 &::-webkit-outer-spin-button,
                 &::-webkit-inner-spin-button {
@@ -123,6 +134,11 @@ $cart-textcolor: #575757;
                 &:focus {
                     appearance: none;
                     -moz-appearance: textfield;
+                }
+
+                &:focus {
+                    outline: none;
+                    border: 1px solid #EAEAEA;
                 }
             }
 
@@ -140,6 +156,11 @@ $cart-textcolor: #575757;
             font-size: 34px;
             line-height: 17px;  
             color: $cart-textcolor;
+            cursor: pointer;
+
+            &:hover {
+                @include hover-params;
+            }
         }
 
         
@@ -158,6 +179,11 @@ $cart-textcolor: #575757;
             line-height: 17px;
             color: black;
             text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover {
+                @include hover-params;
+            }
         }
     }
 }
@@ -220,6 +246,7 @@ $cart-textcolor: #575757;
                 & input {
                     font-size: 10px;
                     line-height: 12px;
+                    padding: 0 6px;
                 }    
             }
 
